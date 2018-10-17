@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/99page/99page",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "首页",
+        "iconPath": "images/homepageimage/home.png",
+        "selectedIconPath":"images/homepageimage/home-select.png"
+      },
+      {
+        "pagePath": "pages/99page/99page",
+        "text": "九块九",
+        "iconPath": "images/cheappageimage/cheap.png",
+        "selectedIconPath": "images/cheappageimage/cheap-select.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/qiang.png",
+        "selectedIconPath": "images/cheappageimage/cheap-select.png"
+      }
+    ]
+  }
+}

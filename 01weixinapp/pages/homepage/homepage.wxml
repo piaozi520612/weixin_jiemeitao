@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo"></view>
+  <view calse="banner">
+    
+  </view>
+    <!-- 首页 目录-->
+    <view class="navs">
+      <block wx:for-items="{{navs}}" wx:key="name">
+        <view class="nav-item" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+          <image src="{{item.icon}}" class="nav-image"/>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+    <!-- 商品 明细-->
+    <view id="coupon-list">
+  
+      <view class="coupon-item">
+        <view class="border-left"></view>
+        <image src="http://img.alicdn.com/bao/uploaded/i3/2895632821/TB1_yg3bsnI8KJjSspeXXcwIpXa_!!0-item_pic.jpg"></image>
+        <view class="goods-content">
+          <view class="goods-content-view">
+            <view class="goods-name">{{item.ItemName}}</view>
+            <view class="goods-price-sales">
+              <view class="goods-price">￥{{item.ItemPrice}}</view>
+              <view class="goods-price-coupon">￥{{item.QuanHouJia}}</view>
+              <view class="goods-sales">月销量: {{item.MonthlySales}}</view>
+            </view>
+            <view class="coupon-denomination">{{item.CouponDenomination}}</view>
+          </view>
+        </view>
+        <view class="coupon-content">
+          <view class="coupon-background">券</view>
+            <view class="coupon-content-view">
+              <view class="coupon-coin">￥{{item.Jian}}</view>
+              <view class="coupon-num">数量: {{item.CouponTotal}}</view>
+              <view class="coupon-ratio">
+                <text>优惠\n比例</text>
+                <view>{{item.ZongHeBiLiText}}</view>
+              </view>
+            </view>
+        </view>
+        <view class="border-right"></view>
+      </view>
+    
+  </view>
+</view>
